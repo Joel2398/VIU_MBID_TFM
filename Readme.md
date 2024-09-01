@@ -26,8 +26,8 @@ El repositorio está organizado de la siguiente manera:
 
 - **Lenguajes de Programación**: Python, C++, Bash
 - **Frameworks y Bibliotecas**: TensorFlow, PyTorch, OpenCV
-- **Plataformas de Edge Computing**: Raspberry Pi, Nvidia Jetson, Intel Neural Compute Stick
-- **Herramientas de Contenedorización**: Docker, Kubernetes
+- **Plataformas de Edge Computing**: Siemens Industrial Edge
+- **Herramientas de Contenedorización**: Docker
 
 ## ¿Qué es Edge Computing?
 
@@ -39,8 +39,7 @@ Soy **Joel Rojas González**, estudiante de Máster en Big Data y Data Science. 
 
 ## Contacto
 
-- **Email**: [tu-email@example.com](mailto:tu-email@example.com)
-- **LinkedIn**: [Joel Rojas González](https://www.linkedin.com/in/joel-rojas-gonzalez/)
+- **Email**: [tu-email@example.com](mailto:joel.rojas2398@gmail.com)
 
 ## Contribución
 
