@@ -29,6 +29,7 @@ INFLUXDB_DATABASE = data['env']['INFLUXDB_DATABASE']
 
 def save_metadata(payload):
     ###We need to keep metadata payload to be able to extract tag names comparing the ids we receive wiht the data payload
+    # Para entender esto ver Doc OPC-UA Connector IE en el capitulo 8.4.1 y 8.4.2
     global metadata_payload
     for key,value in payload.items():
         if (key == 'seq'):
@@ -46,8 +47,52 @@ def extract_connection_name(topic):
     except AttributeError:
         pass
 
-
 def extract_names_from_metadata(tag_id, connection_name):
+    # Inicializa la variable tag_name al principio
+    tag_name = None
+
+    # Función para extraer el nombre del tag a partir de su ID en los metadatos
+    for key, value in metadata_payload.items():
+        if key == 'connections':
+            elements = value  # Almacena las conexiones
+            break  # Usa break en lugar de exit para salir del bucle
+
+    for element in elements:
+        for key, value in element.items():
+            if key == 'name':
+                if value == connection_name:
+                    continue  # Sigue al siguiente bloque si hay coincidencia
+                else:
+                    break  # Sal del bucle si no hay coincidencia
+
+            if key == 'dataPoints':
+                dataPoints = value  # Almacena los puntos de datos
+                break  # Usa break para salir del bucle
+
+    for datapoint in dataPoints:
+        for key, value in datapoint.items():
+            if key == 'dataPointDefinitions':
+                definitions = value  # Almacena las definiciones de puntos de datos
+                break  # Usa break para salir del bucle
+
+    for definition in definitions:
+        # Reorganiza las condiciones para asignar tag_name correctamente
+        tag_name_found = False  # Bandera para indicar si se encuentra el nombre del tag
+        tag_name = None
+
+        for key, value in definition.items():
+            if key == 'id' and value == tag_id:
+                tag_name_found = True  # Marca como encontrado el ID
+            elif key == 'name' and tag_name_found:
+                tag_name = value  # Asigna el nombre del tag
+                return tag_name
+
+    return tag_name  # Devuelve tag_name, aunque sea None
+
+'''def extract_names_from_metadata(tag_id, connection_name):
+    # Inicializo tag_name por si key == Name pero id no
+    tag_name = None
+
     ###Function to extract the from every tag wiht an ID given from Databus Metadata
     for key,value in metadata_payload.items():
         if (key == 'connections'):
@@ -76,7 +121,7 @@ def extract_names_from_metadata(tag_id, connection_name):
                 tag_name = value
             if (key == 'id'):
                 if (value == tag_id):
-                    return tag_name
+                    return tag_name'''
 
 def build_json_influx(dict_values, connection_name):
     logging.info('Data are sending to database is:'+ str(dict_values))
@@ -124,7 +169,6 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     payload = json.loads(msg.payload.decode('utf-8'))
     topic = msg.topic
-    logging.info(f'El topic es: ', topic) # solo para debug. pte borrar
     if msg.topic == MQTT_TOPIC_METADATA:
         save_metadata(payload)
     elif msg.topic == MQTT_TOPIC_DATA:
