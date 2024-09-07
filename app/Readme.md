@@ -34,9 +34,9 @@ En el ejemplo se explica como ejecutar la aplicación de manera local y cómo in
 
 ### Componentes usados
 
-- Industrial Edge Device  V 1.8.0-6 (API version 1.0.0)
-- Industrial Edge Management App V 1.8.6 (API version 1.3.0)
-- Industrial Edge Publisher V 1.6.5
+- Industrial Edge Device  V ____ (API version ____)
+- Industrial Edge Management App V ____ (API version ____)
+- Industrial Edge Publisher V ____
 - VM Ubuntu 20.04
 - Docker 20.10.21
 

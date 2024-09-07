@@ -1,0 +1,319 @@
+[
+    {
+        "id": "a48d1481bdad37db",
+        "type": "tab",
+        "label": "Node-Red-TEST",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d85288fbefd378c8",
+        "type": "mqtt out",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "publish metadata",
+        "topic": "ie/m/j/simatic/v1/s7c1/dp",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "01ac6d08a36f662e",
+        "x": 610,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "7105585a7b9f71f0",
+        "type": "inject",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "prueba_inject_metadata",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "ie/m/j/simatic/v1/s7c1/dp",
+        "payload": "{\"seq\":1,\"connections\":[{\"name\":\"KELABO1-----BS1---KFU1\",\"dataPoints\":[{\"dataPointDefinitions\":[{\"id\":\"001\",\"name\":\"Temperature\"},{\"id\":\"002\",\"name\":\"Pressure\"}]}]}]}",
+        "payloadType": "json",
+        "x": 270,
+        "y": 500,
+        "wires": [
+            [
+                "88d7ec66abce1e17"
+            ]
+        ]
+    },
+    {
+        "id": "e2320d8f874be08f",
+        "type": "inject",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "prueba_inject_data_id2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "ie/d/j/simatic/v1/s7c1/dp/r/KELABO1-----BS1---KFU1/default",
+        "payload": "{\"vals\":[{\"id\":\"002\",\"val\":180.5}]}",
+        "payloadType": "json",
+        "x": 290,
+        "y": 620,
+        "wires": [
+            [
+                "c7d4f7ecb365d848"
+            ]
+        ]
+    },
+    {
+        "id": "c7d4f7ecb365d848",
+        "type": "mqtt out",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "ie/d/j/simatic/v1/s7c1/dp/r/KELABO1-----BS1---KFU1/default",
+        "topic": "ie/d/j/simatic/v1/s7c1/dp/r/KELABO1-----BS1---KFU1/default",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "01ac6d08a36f662e",
+        "x": 740,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "a3a3b4a4b733fc87",
+        "type": "mqtt in",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "",
+        "topic": "ie/d/j/simatic/v1/s7c1/dp/r/KELABO1-----BS1---KFU1/default",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "01ac6d08a36f662e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 780,
+        "wires": [
+            [
+                "0b4d16e5fc951fb5"
+            ]
+        ]
+    },
+    {
+        "id": "0b4d16e5fc951fb5",
+        "type": "debug",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "88d7ec66abce1e17",
+        "type": "debug",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "eea29f8e2784c17f",
+        "type": "inject",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "prueba_inject_data_id1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "ie/d/j/simatic/v1/s7c1/dp/r/KELABO1-----BS1---KFU1/default",
+        "payload": "{\"vals\":[{\"id\":\"001\",\"val\":20.5}]}",
+        "payloadType": "json",
+        "x": 290,
+        "y": 680,
+        "wires": [
+            [
+                "c7d4f7ecb365d848"
+            ]
+        ]
+    },
+    {
+        "id": "cebf71f6c28272c0",
+        "type": "comment",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "# Nos suscribimos al Topic de data y debugeamos la info",
+        "info": "",
+        "x": 330,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "5137115dd66bd7bf",
+        "type": "comment",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "# Le pasamos tag metadata",
+        "info": "",
+        "x": 240,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7d1adf564e2da37d",
+        "type": "comment",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "# Le pasamos tag data",
+        "info": "En este caso estoy alternando para verificar que al llegarme datos del PLC de cualquier variable, me sigan apareciendo los datos que no han cambiado",
+        "x": 220,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "503bbb9506d425f7",
+        "type": "debug",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "name": "Read data PLCSIM",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7a8e8bfbc6bbde89",
+        "type": "s7 in",
+        "z": "a48d1481bdad37db",
+        "d": true,
+        "endpoint": "344c02a31d349ea3",
+        "mode": "all",
+        "variable": "",
+        "diff": true,
+        "name": "",
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "503bbb9506d425f7"
+            ]
+        ]
+    },
+    {
+        "id": "01ac6d08a36f662e",
+        "type": "mqtt-broker",
+        "name": "Databus",
+        "broker": "localhost",
+        "port": "33083",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "344c02a31d349ea3",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.1.10",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "PLC_Laboratorio",
+        "vartable": [
+            {
+                "addr": "",
+                "name": ""
+            }
+        ]
+    }
+]
