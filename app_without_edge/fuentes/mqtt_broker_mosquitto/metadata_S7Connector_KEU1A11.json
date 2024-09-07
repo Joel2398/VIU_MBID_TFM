@@ -1,0 +1,851 @@
+{
+    "seq": 1,
+    "hashVersion": 2364711840,
+    "connections": [
+        {
+            "name": "KELABO1-----BS1---KFU1",
+            "type": "S7Plus",
+            "dataPoints": [
+                {
+                    "name": "default",
+                    "topic": "ie/d/j/simatic/v1/s7c1/dp/r/KELABO1-----BS1---KFU1/default",
+                    "publishType": "bulk",
+                    "dataPointDefinitions": [
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.POR_OEE",
+                            "id": "101",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.POR_Disponibilidad",
+                            "id": "102",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.POR_D_TECNICA",
+                            "id": "103",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.POR_Rendimiento",
+                            "id": "104",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.POR_Calidad",
+                            "id": "105",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Paro_No_Programado",
+                            "id": "106",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Neto",
+                            "id": "107",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Ciclo_ACT",
+                            "id": "108",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Mem_Ciclo_Ant",
+                            "id": "109",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Ciclo_Medio",
+                            "id": "110",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_LOG_IN_ACT",
+                            "id": "111",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_LOG_IN_ACU",
+                            "id": "112",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_LOG_OUT_ACT",
+                            "id": "113",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_LOG_OUT_ACU",
+                            "id": "114",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Ciclo_Logistico",
+                            "id": "115",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Averia_ACT",
+                            "id": "116",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Averia_ACU",
+                            "id": "117",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.N_SOLL",
+                            "id": "118",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.N_TREND",
+                            "id": "119",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.N_PROD",
+                            "id": "120",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.N_OK",
+                            "id": "121",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.N_NOK",
+                            "id": "122",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.N_PAUSA",
+                            "id": "123",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.ST_Instal_en_seq",
+                            "id": "124",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.ST_Instal_en_PAUSA",
+                            "id": "125",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.ST_Instal_en_BREAK",
+                            "id": "126",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.ST_EnCiclo_CO",
+                            "id": "127",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.ST_Averia",
+                            "id": "128",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.ST_IN_LOG_IN",
+                            "id": "129",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.ST_IN_LOG_OUT",
+                            "id": "130",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_Stoe_OEE",
+                            "id": "131",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_Warn_OEE",
+                            "id": "132",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_OK_OEE",
+                            "id": "133",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_Stoe_Disponibilidad",
+                            "id": "134",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_Warn_Disponibilidad",
+                            "id": "135",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_OK_Disponibilidad",
+                            "id": "136",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_Stoe_Eficiencia",
+                            "id": "137",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_Warn_Eficiencia",
+                            "id": "138",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_OK_Eficiencia",
+                            "id": "139",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_Stoe_Calidad",
+                            "id": "140",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_Warn_Calidad",
+                            "id": "141",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_OK_Calidad",
+                            "id": "142",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_TC_OBJ",
+                            "id": "143",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.SP_SOLL",
+                            "id": "144",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.Status_W_Stoe",
+                            "id": "145",
+                            "dataType": "DWord",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.Stoe",
+                            "id": "146",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.Version_FB",
+                            "id": "147",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.T_Neto_Disponible",
+                            "id": "148",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.StrPlataforma",
+                            "id": "149",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.StrInstalación",
+                            "id": "150",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.StrARG",
+                            "id": "151",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210R01_FB_SEAT_Statistik_ZAU.120210R01.StrSubzona",
+                            "id": "152",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.POR_OEE",
+                            "id": "153",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.POR_Disponibilidad",
+                            "id": "154",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.POR_D_TECNICA",
+                            "id": "155",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.POR_Rendimiento",
+                            "id": "156",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.POR_Calidad",
+                            "id": "157",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Paro_No_Programado",
+                            "id": "158",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Neto",
+                            "id": "159",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Ciclo_ACT",
+                            "id": "160",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Mem_Ciclo_Ant",
+                            "id": "161",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Ciclo_Medio",
+                            "id": "162",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_LOG_IN_ACT",
+                            "id": "163",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_LOG_IN_ACU",
+                            "id": "164",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_LOG_OUT_ACT",
+                            "id": "165",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_LOG_OUT_ACU",
+                            "id": "166",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Ciclo_Logistico",
+                            "id": "167",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Averia_ACT",
+                            "id": "168",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Averia_ACU",
+                            "id": "169",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.N_SOLL",
+                            "id": "170",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.N_TREND",
+                            "id": "171",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.N_PROD",
+                            "id": "172",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.N_OK",
+                            "id": "173",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.N_NOK",
+                            "id": "174",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.N_PAUSA",
+                            "id": "175",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.ST_Instal_en_seq",
+                            "id": "176",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.ST_Instal_en_PAUSA",
+                            "id": "177",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.ST_Instal_en_BREAK",
+                            "id": "178",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.ST_EnCiclo_CO",
+                            "id": "179",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.ST_Averia",
+                            "id": "180",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.ST_IN_LOG_IN",
+                            "id": "181",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.ST_IN_LOG_OUT",
+                            "id": "182",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_Stoe_OEE",
+                            "id": "183",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_Warn_OEE",
+                            "id": "184",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_OK_OEE",
+                            "id": "185",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_Stoe_Disponibilidad",
+                            "id": "186",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_Warn_Disponibilidad",
+                            "id": "187",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_OK_Disponibilidad",
+                            "id": "188",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_Stoe_Eficiencia",
+                            "id": "189",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_Warn_Eficiencia",
+                            "id": "190",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_OK_Eficiencia",
+                            "id": "191",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_Stoe_Calidad",
+                            "id": "192",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_Warn_Calidad",
+                            "id": "193",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_OK_Calidad",
+                            "id": "194",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_TC_OBJ",
+                            "id": "195",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.SP_SOLL",
+                            "id": "196",
+                            "dataType": "Int",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.Status_W_Stoe",
+                            "id": "197",
+                            "dataType": "DWord",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.Stoe",
+                            "id": "198",
+                            "dataType": "Bool",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.Version_FB",
+                            "id": "199",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.T_Neto_Disponible",
+                            "id": "200",
+                            "dataType": "Real",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.StrPlataforma",
+                            "id": "201",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.StrInstalación",
+                            "id": "202",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.StrARG",
+                            "id": "203",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        },
+                        {
+                            "name": "120210RB1_FB_SEAT_Statistik_ZAU.120210RB1.StrSubzona",
+                            "id": "204",
+                            "dataType": "String",
+                            "accessMode": "r",
+                            "acquisitionCycleInMs": 1000,
+                            "acquisitionMode": "CyclicOnChange"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
