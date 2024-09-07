@@ -1,8 +1,8 @@
 {
     "env": {
-        "MQTT_BROKER_SERVER": "192.168.1.113",
+        "MQTT_BROKER_SERVER": "ie-databus",
         "MQTT_TOPIC_METADATA": "ie/m/j/simatic/v1/s7c1/dp",
-        "MQTT_TOPIC_DATA": "ie/d/j/simatic/v1/s7c1/dp/r/PLC_1/default",
+        "MQTT_TOPIC_DATA": "ie/d/j/simatic/v1/s7c1/dp/r/KELABO1-----BS1---KFU1/default",
         "MQTT_USER": "edge",
         "MQTT_PASSWORD": "edge",
         "INFLUXDB_IP": "influxdb",
