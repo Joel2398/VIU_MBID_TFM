@@ -27,7 +27,7 @@ services:
         container_name: influxdb
         restart: unless-stopped
         volumes: 
-            - influxdata:/var/lib/influxdb           
+            - influxdata:/var/lib/influxdb
         mem_limit: 100mb
         networks: 
             - proxy-redirect
