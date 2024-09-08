@@ -25,9 +25,12 @@ services:
            context: ./influxdb
         image: edge/influxdb:1.0.0
         container_name: influxdb
+        ports:
+            - "8087:8086"
         restart: unless-stopped
-        volumes: 
-            - influxdata:/var/lib/influxdb
+        volumes:
+        - influxdata:/var/lib/influxdb
+        - ./influxdb/influxdb.conf:/etc/influxdb/influxdb.conf
         mem_limit: 100mb
         networks: 
             - proxy-redirect
