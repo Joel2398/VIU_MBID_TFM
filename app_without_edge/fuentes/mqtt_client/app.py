@@ -1,7 +1,9 @@
-import os 
+import subprocess
+import os
 import json
 import paho.mqtt.client as mqtt
-from influxdb import InfluxDBClient
+from influxdb_client import InfluxDBClient, Point, WritePrecision
+from influxdb_client.client.write_api import SYNCHRONOUS
 import logging
 import time
 import re
@@ -29,8 +31,10 @@ MQTT_USER = data['env']['MQTT_USER']
 MQTT_PASSWORD = data['env']['MQTT_PASSWORD']
 MQTT_TOPIC_METADATA = data['env']['MQTT_TOPIC_METADATA']
 MQTT_TOPIC_DATA = data['env']['MQTT_TOPIC_DATA']
-INFLUXDB_IP = data['env']['INFLUXDB_IP']
-INFLUXDB_DATABASE = data['env']['INFLUXDB_DATABASE']
+INFLUXDB_URL = data['env']['INFLUXDB_URL']
+INFLUXDB_TOKEN = data['env']['INFLUXDB_TOKEN']
+INFLUXDB_ORG = data['env']['INFLUXDB_ORG']
+INFLUXDB_BUCKET = data['env']['INFLUXDB_BUCKET']
 
 # Función para guardar metadata
 def save_metadata(payload):
@@ -89,18 +93,16 @@ def build_json_influx(dict_values, connection_name):
         logging.error("No hay datos para enviar a InfluxDB")
         return
 
-    json_body = [
-        {
-            "measurement": connection_name,
-            "fields": dict_values
-        }
-    ]
+    points = []
+    for key, value in dict_values.items():
+        point = Point(connection_name).field(key, value).time(time.time_ns(), WritePrecision.NS)
+        points.append(point)
 
     try:
-        influx_client.write_points(json_body)
-        logging.info(f"Datos enviados a InfluxDB: {json_body}")
+        write_api.write(bucket=INFLUXDB_BUCKET, org=INFLUXDB_ORG, record=points)
+        logging.info(f"Datos enviados a InfluxDB")
     except Exception as e:
-        logging.error(f"Error al escribir en InfluxDB: {e}, Datos: {json_body}")
+        logging.error(f"Error al escribir en InfluxDB: {e}, Datos: {points}")
 
 # Extraer y procesar los datos del mensaje MQTT
 def extract_data(topic, payload):
@@ -149,12 +151,10 @@ client.on_message = on_message
 client.username_pw_set(MQTT_USER, MQTT_PASSWORD)
 client.connect(MQTT_BROKER_SERVER, 1883, 60)
 
-logging.info('Creando base de datos InfluxDB')
-
+# Crear cliente de InfluxDB v2
 try:
-    influx_client = InfluxDBClient(INFLUXDB_IP, 8086, "root", "root", INFLUXDB_DATABASE)
-    influx_client.create_database(INFLUXDB_DATABASE)
-    influx_client.switch_database(INFLUXDB_DATABASE)
+    influx_client = InfluxDBClient(url=INFLUXDB_URL, token=INFLUXDB_TOKEN, org=INFLUXDB_ORG)
+    write_api = influx_client.write_api(write_options=SYNCHRONOUS)
     logging.info('InfluxDB configurado correctamente')
 except Exception as e:
     logging.error(f"Error al conectar o configurar InfluxDB: {e}")

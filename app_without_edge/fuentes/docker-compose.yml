@@ -20,47 +20,22 @@ services:
                 max-file: "3"
 
 
-    influxdb: 
-        build: 
-           context: ./influxdb
-        image: edge/influxdb:1.0.0
+    influxdb:
+        image: influxdb:2.7
         container_name: influxdb
         ports:
-            - "8087:8086"
-        restart: unless-stopped
+        - "8086:8086"
         volumes:
-        - influxdata:/var/lib/influxdb
-        - ./influxdb/influxdb.conf:/etc/influxdb/influxdb.conf
-        mem_limit: 100mb
-        networks: 
-            - proxy-redirect
-        logging:
-            driver: "json-file"
-            options:
-                max-size: "10m"
-                max-file: "3"
-
-
-    grafana: 
-        build:
-            context: ./grafana
-        image: edge/grafana:1.0.0
-        container_name: grafana
-        ports: 
-            - "33000:3000"
+        - influxdata:/var/lib/influxdb2
         restart: unless-stopped
-        depends_on:
-            - influxdb 
-        volumes: 
-            - grafanadata:/var/lib/grafana 
-        networks: 
+        networks:
             - proxy-redirect
-        mem_limit: 400mb
         logging:
             driver: "json-file"
             options:
                 max-size: "10m"
                 max-file: "3"
+
   
 volumes:
     influxdata:
