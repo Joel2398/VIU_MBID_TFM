@@ -6,7 +6,7 @@
         "MQTT_USER": "edge",
         "MQTT_PASSWORD": "edge",
         "INFLUXDB_URL": "http://influxdb:8086",  
-        "INFLUXDB_TOKEN": "3V-nsBPPoqOWEzCO0I72seM52mWLnpt_jxx1-Jgiahox4uoDpF0IwFw2w2HN-JRpfvgCfiB9ibuqIDG5w5b97A==",              
+        "INFLUXDB_TOKEN": "your-secret-token",              
         "INFLUXDB_ORG": "my-org",               
         "INFLUXDB_BUCKET": "my-bucket"           
     }

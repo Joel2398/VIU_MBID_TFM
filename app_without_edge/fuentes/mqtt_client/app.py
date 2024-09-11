@@ -102,7 +102,7 @@ def build_json_influx(dict_values, connection_name):
         write_api.write(bucket=INFLUXDB_BUCKET, org=INFLUXDB_ORG, record=points)
         logging.info(f"Datos enviados a InfluxDB")
     except Exception as e:
-        logging.error(f"Error al escribir en InfluxDB: {e}, Datos: {points}")
+        logging.error(f"Error al escribir en InfluxDB: {e}")
 
 # Extraer y procesar los datos del mensaje MQTT
 def extract_data(topic, payload):
