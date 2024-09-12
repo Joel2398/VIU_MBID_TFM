@@ -1,6 +1,6 @@
-# Ejemplo de aplicación de Grafana e InfluxDB
+# Aplicación de test con Grafanaa, InfluxDB y Broker MQTT simulado
 
-Guía rápida en español de cómo implementar una aplicación multiservicio con Grafana e InfluxDB 
+Se lleva a cabo aplicación multiservicio en entorno de test. Con el objetivo de probar y emular lo que posteriormente se desplegará sobre un equipo EDGE
 
 - [Descripción](#descripción)
 - [Requisitos](#requisitos)
@@ -34,15 +34,13 @@ En el ejemplo se explica como ejecutar la aplicación de manera local y cómo in
 
 ### Componentes usados
 
-- Industrial Edge Device  V ____ (API version ____)
-- Industrial Edge Management App V ____ (API version ____)
-- Industrial Edge Publisher V ____
 - VM Ubuntu 20.04
 - Docker 20.10.21
 
 ### HW utilizado
 
-- IPC 227E 6ES7647-8BD31-0CW1
+- Todos los servicios se levantan mediante VM Ubuntu
+- La simulación del PLC se realiza con PLCSIM y NetToPLC
 
 ## Casos de uso
 
@@ -64,23 +62,12 @@ En el ejemplo se explica como ejecutar la aplicación de manera local y cómo in
 
 ## Colaboración
 
-- Subid los cambios a una rama de Pred-Prod
-- Solicitad los cambios a la main con un merge-request
 
 
 ## Futuros Pasos
 
-Probar para múltiples tipos de IEDs: No sabemos si no está preparado o que en está aplicación no se saca la info del tipo de IEDS.
-En la API del IEM, para crear un IED nuevo, no sale nada de un identificador por tipo de IED, por lo que la API solo está preparada para dar de alta 227E.
-
-
-Generar dos tareas para:
-- Incluir un descubrimiento en los equipos?
-- Generar el excel de manera automática.
-
 
 ## Autores
-Mariola Belda Marín
-RC-ES DI FA Dir Tech. Siemens S.A. 
+Joel J Rojas Gonzalez
 
 ## Licencias

@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "node-red-contrib-aedes": "^0.13.2"
-  }
-}
