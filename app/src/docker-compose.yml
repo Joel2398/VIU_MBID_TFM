@@ -34,6 +34,9 @@ services:
             DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: "my-secret-token"
         volumes:
         - influxdata:/var/lib/influxdb2
+        mem_limit : 2048mb
+        mem_reservation : 1024mb
+
         restart: unless-stopped
         networks:
             - proxy-redirect
