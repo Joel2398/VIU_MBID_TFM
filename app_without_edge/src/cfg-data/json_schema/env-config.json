@@ -1,0 +1,87 @@
+{
+    "uischema": {
+      "type": "Group",
+      "elements": [
+        {
+          "type": "Group",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/MQTT_BROKER_SERVER"
+            },
+            {
+              "type": "HorizontalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/MQTT_USER"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/MQTT_PASSWORD"
+                }
+              ]
+            }
+          ],
+          "label": "MQTT Broker credentials"
+        },
+        {
+          "type": "Group",
+          "elements": [
+            {
+              "type": "HorizontalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/MQTT_TOPIC_METADATA"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/MQTT_TOPIC_DATA"
+                }
+              ]
+            }
+          ],
+          "label": "MQTT Topics"
+        }
+      ]
+    },
+    "dataschema": {
+      "type": "object",
+      "properties": {
+        "MQTT_BROKER_SERVER": {
+          "title": "MQTT Broker",
+          "default": "ie-databus",
+          "type": "string"
+        },
+        "MQTT_USER": {
+          "title": "Username",
+          "default": "edge",
+          "type": "string"
+        },
+        "MQTT_PASSWORD": {
+          "title": "Password",
+          "default": "edge",
+          "type": "string"
+        },
+        "MQTT_TOPIC_METADATA": {
+          "title": "Metadata Topic",
+          "default": "ie/m/j/simatic/v1/s7c1/dp",
+          "type": "string"
+        },
+        "MQTT_TOPIC_DATA": {
+          "title": "Data Topic",
+          "default": "ie/d/j/simatic/v1/s7c1/dp/r/KELABO1-----BS1---KFU1/default",
+          "type": "string"
+        }
+      },
+      "required": [
+        "MQTT_BROKER_SERVER",
+        "MQTT_USER",
+        "MQTT_PASSWORD",
+        "MQTT_TOPIC_METADATA",
+        "MQTT_TOPIC_DATA"
+      ]
+    }
+  }
+  
