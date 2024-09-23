@@ -12,7 +12,7 @@ services:
         restart: unless-stopped
         networks: 
             - proxy-redirect
-        mem_limit: 100mb
+        mem_limit: 2048mb
         logging:
             driver: "json-file"
             options:
