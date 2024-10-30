@@ -15,17 +15,15 @@ Este repositorio contiene el trabajo de fin de máster (TFM) desarrollado por **
 
 El repositorio está organizado de la siguiente manera:
 
-- `docs/`: Contiene la documentación del proyecto, incluyendo el estado del arte, marco teórico, y análisis de resultados.
+- `docs/`: Contiene la documentación del repositorio
 - `src/`: Código fuente de los algoritmos y aplicaciones desarrolladas durante el TFM.
-- `notebooks/`: Jupyter Notebooks utilizados para pruebas y análisis exploratorio de datos.
-- `data/`: Conjunto de datos utilizados para pruebas y validación de los algoritmos.
-- `experiments/`: Resultados de experimentos, scripts de configuración, y evaluaciones de rendimiento.
+- `data/`: Conjunto de datos utilizados para pruebas y validación de los algoritmos. Estas no se suben por ecceso de peso
 - `README.md`: Este archivo.
 
 ## Tecnologías Utilizadas
 
-- **Lenguajes de Programación**: Python, C++, Bash
-- **Frameworks y Bibliotecas**: TensorFlow, PyTorch, OpenCV
+- **Lenguajes de Programación**: Python, Bash
+- **Frameworks y Bibliotecas**: SikitLearn, Pandas, Numpy
 - **Plataformas de Edge Computing**: Siemens Industrial Edge
 - **Herramientas de Contenedorización**: Docker
 
@@ -35,7 +33,7 @@ Edge Computing es un paradigma que acerca el procesamiento de datos y la ejecuci
 
 ## Sobre el Autor
 
-Soy **Joel Rojas González**, estudiante de Máster en Big Data y Data Science. Mi pasión por la tecnología y mi interés por la computación distribuida y la inteligencia artificial me llevaron a elegir este tema para mi TFM. A través de este trabajo, busco contribuir a la evolución del Edge Computing y su aplicabilidad en la industria.
+Soy **Joel Rojas González**, estudiante de Máster en Big Data y Data Science en la VIU. Mi pasión por la tecnología y mi interés por la computación distribuida y la inteligencia artificial me llevaron a elegir este tema para mi TFM. A través de este trabajo, busco contribuir a la evolución del Edge Computing y su aplicabilidad en la industria.
 
 ## Contacto
 
@@ -43,8 +41,4 @@ Soy **Joel Rojas González**, estudiante de Máster en Big Data y Data Science. 
 
 ## Contribución
 
-Este es un proyecto académico, pero cualquier sugerencia, comentario, o colaboración es bienvenida. No dudes en abrir un _issue_ o enviar un _pull request_ si deseas contribuir.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+Este es un proyecto académico, pero cualquier sugerencia, comentario, o colaboración es bienvenida.

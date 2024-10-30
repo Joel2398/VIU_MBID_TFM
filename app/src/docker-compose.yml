@@ -27,8 +27,8 @@ services:
         - "8086:8086"
         environment:
             DOCKER_INFLUXDB_INIT_MODE: "setup"
-            DOCKER_INFLUXDB_INIT_USERNAME: "adminedge@seat.es"
-            DOCKER_INFLUXDB_INIT_PASSWORD: "E*123456"
+            DOCKER_INFLUXDB_INIT_USERNAME: "confidential"
+            DOCKER_INFLUXDB_INIT_PASSWORD: "confidential"
             DOCKER_INFLUXDB_INIT_ORG: "SEAT S.A."
             DOCKER_INFLUXDB_INIT_BUCKET: "my-bucket"
             DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: "my-secret-token"
