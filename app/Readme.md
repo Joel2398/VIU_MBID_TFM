@@ -51,8 +51,6 @@ En el ejemplo se explica como ejecutar la aplicación de manera local y cómo in
 ## Conclusiones
 
 
-
-
 ## Documentación 
 
 - [Industrial Edge Hub](https://iehub.eu1.edge.siemens.cloud/#/documentation)
@@ -63,11 +61,9 @@ En el ejemplo se explica como ejecutar la aplicación de manera local y cómo in
 ## Colaboración
 
 
-
 ## Futuros Pasos
 
 
 ## Autores
 Joel J Rojas Gonzalez
 
-## Licencias
