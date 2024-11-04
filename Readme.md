@@ -37,7 +37,7 @@ Soy **Joel Rojas González**, estudiante de Máster en Big Data y Data Science e
 
 ## Contacto
 
-- **Email**: [tu-email@example.com](mailto:joel.rojas2398@gmail.com)
+- **Email**: [joel.rojas2398@gmail.com](mailto:joel.rojas2398@gmail.com)
 
 ## Contribución
 
