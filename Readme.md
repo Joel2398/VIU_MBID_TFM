@@ -54,6 +54,7 @@ Este repositorio sigue la estructura habitual de proyectos en GitHub, con un arc
 │       ├── exploratory_data_analysis.ipynb
 │       └── predictive_analysis.ipynb
 └── README.md
+```
 
 ## Descripción de las Carpetas
 
