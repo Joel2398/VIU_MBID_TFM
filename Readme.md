@@ -13,19 +13,67 @@ Este repositorio contiene el trabajo de fin de máster (TFM) desarrollado por **
 
 ## Estructura del Repositorio
 
-El repositorio está organizado de la siguiente manera:
+Este repositorio sigue la estructura habitual de proyectos en GitHub, con un archivo `README.md` que proporciona una descripción detallada de la distribución del repositorio. A continuación, se detalla la estructura de carpetas utilizada:
 
-- `docs/`: Contiene la documentación del repositorio
-- `src/`: Código fuente de los algoritmos y aplicaciones desarrolladas durante el TFM.
-- `data/`: Conjunto de datos utilizados para pruebas y validación de los algoritmos. Estas no se suben por ecceso de peso
-- `README.md`: Este archivo.
+```plaintext
+├── app/
+│   ├── docs/
+│   │   └── documentación_relevante.md
+│   ├── src/
+│   │   ├── docker-compose.yml
+│   │   ├── influxdb/
+│   │   │   ├── Dockerfile
+│   │   │   └── setup_influxdb.sh
+│   │   └── mqtt_client/
+│   │       ├── app.py
+│   │       ├── requirements.txt
+│   │       └── Dockerfile
+├── app_without_edge/
+│   ├── docs/
+│   ├── src/
+│   │   ├── docker-compose.yml
+│   │   ├── mqtt_client/
+│   │   │   ├── app.py
+│   │   │   ├── Dockerfile
+│   │   │   └── requirements.txt
+│   │   ├── influxdb/
+│   │   │   ├── Dockerfile
+│   │   │   └── setup_influxdb.sh
+│   │   ├── env-config.json
+├── data_analysis/
+│   ├── data/
+│   │   ├── raw_data/
+│   │   │   ├── dataset.csv
+│   │   │   ├── features.csv
+│   │   │   └── labels.csv
+│   ├── models/
+│   │   ├── model_training.ipynb
+│   │   ├── model.pkl
+│   │   └── scaler.pkl
+│   └── notebooks/
+│       ├── exploratory_data_analysis.ipynb
+│       └── predictive_analysis.ipynb
+└── README.md
+
+## Descripción de las Carpetas
+
+- **app/**: Esta carpeta contiene los archivos necesarios para hacer funcionar la aplicación dentro de un entorno de Edge Computing.
+  - **docs/**: Documentación del repositorio.
+  - **src/**: Carpeta principal con todos los componentes y configuraciones necesarias para ejecutar la aplicación en un entorno Docker. Incluye servicios como InfluxDB y MQTT Client, junto con sus archivos de configuración.
+
+- **app_without_edge/**: Similar a la carpeta `app`, pero optimizada para entornos sin Edge Computing. Esta versión permite simular la aplicación en un entorno local, facilitando la validación y depuración antes del despliegue en producción.
+
+- **data_analysis/**: Aquí se encuentran los archivos necesarios para el análisis de datos basados en una instalación real.
+  - **data/**: Almacena los conjuntos de datos utilizados para el análisis.
+  - **models/**: Contiene los modelos de predicción entrenados y los archivos de preprocesamiento.
+  - **notebooks/**: Incluye Jupyter Notebooks para realizar análisis exploratorios y predictivos.
 
 ## Tecnologías Utilizadas
 
 - **Lenguajes de Programación**: Python, Bash
-- **Frameworks y Bibliotecas**: SikitLearn, Pandas, Numpy
+- **Frameworks y Bibliotecas**: Scikit-Learn, Pandas, Numpy
 - **Plataformas de Edge Computing**: Siemens Industrial Edge
-- **Herramientas de Contenedorización**: Docker
+- **Herramientas de Contenedorización**: Docker, Docker Compose
 
 ## ¿Qué es Edge Computing?
 
@@ -38,7 +86,4 @@ Soy **Joel Rojas González**, estudiante de Máster en Big Data y Data Science e
 ## Contacto
 
 - **Email**: [joel.rojas2398@gmail.com](mailto:joel.rojas2398@gmail.com)
-
-## Contribución
-
-Este es un proyecto académico, pero cualquier sugerencia, comentario, o colaboración es bienvenida.
+- **LinkedIn**: [Joel J Rojas González](https://www.linkedin.com/in/joel-j-rojas-gonzález/)
