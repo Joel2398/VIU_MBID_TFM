@@ -62,7 +62,7 @@ Este repositorio sigue la estructura habitual de proyectos en GitHub, con un arc
   - **`docs/`**: Documentación del repositorio.
   - **`src/`**: Carpeta principal con todos los componentes y configuraciones necesarias para ejecutar la aplicación en un entorno Docker. Incluye servicios como InfluxDB y MQTT Client, junto con sus archivos de configuración.
 
-- **`app_without_edge/`**: Similar a la carpeta `app`, pero optimizada para entornos sin Edge Computing. Esta versión permite simular la aplicación en un entorno local, facilitando la validación y depuración antes del despliegue en producción.
+- **`app_without_edge/`**: Similar a la carpeta `app`, pero optimizada para entornos sin Edge Computing. Esta versión permite simular la aplicación en un entorno local, facilitando la validación y depuración antes del despliegue en producción. Aqui simulamos un MQTT Broker que nos permite realizar realizar las simulaciones de entrada y análisis de datos con entrada de datos sintéticas o a partir de una muestra
 
 - **`data_analysis/`**: Aquí se encuentran los archivos necesarios para el análisis de datos basados en una instalación real.
   - **data/**: Almacena los conjuntos de datos utilizados para el análisis.
