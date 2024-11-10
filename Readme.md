@@ -58,23 +58,23 @@ Este repositorio sigue la estructura habitual de proyectos en GitHub, con un arc
 
 ## Descripción de las Carpetas
 
-- **app/**: Esta carpeta contiene los archivos necesarios para hacer funcionar la aplicación dentro de un entorno de Edge Computing.
-  - **docs/**: Documentación del repositorio.
-  - **src/**: Carpeta principal con todos los componentes y configuraciones necesarias para ejecutar la aplicación en un entorno Docker. Incluye servicios como InfluxDB y MQTT Client, junto con sus archivos de configuración.
+- **`app/`**: Esta carpeta contiene los archivos necesarios para hacer funcionar la aplicación dentro de un entorno de Edge Computing.
+  - **`docs/`**: Documentación del repositorio.
+  - **`src/`**: Carpeta principal con todos los componentes y configuraciones necesarias para ejecutar la aplicación en un entorno Docker. Incluye servicios como InfluxDB y MQTT Client, junto con sus archivos de configuración.
 
-- **app_without_edge/**: Similar a la carpeta `app`, pero optimizada para entornos sin Edge Computing. Esta versión permite simular la aplicación en un entorno local, facilitando la validación y depuración antes del despliegue en producción.
+- **`app_without_edge/`**: Similar a la carpeta `app`, pero optimizada para entornos sin Edge Computing. Esta versión permite simular la aplicación en un entorno local, facilitando la validación y depuración antes del despliegue en producción.
 
-- **data_analysis/**: Aquí se encuentran los archivos necesarios para el análisis de datos basados en una instalación real.
+- **`data_analysis/`**: Aquí se encuentran los archivos necesarios para el análisis de datos basados en una instalación real.
   - **data/**: Almacena los conjuntos de datos utilizados para el análisis.
   - **models/**: Contiene los modelos de predicción entrenados y los archivos de preprocesamiento.
   - **notebooks/**: Incluye Jupyter Notebooks para realizar análisis exploratorios y predictivos.
 
 ## Tecnologías Utilizadas
 
-- **Lenguajes de Programación**: Python, Bash
+- **Lenguajes de Programación**: Python
 - **Frameworks y Bibliotecas**: Scikit-Learn, Pandas, Numpy
 - **Plataformas de Edge Computing**: Siemens Industrial Edge
-- **Herramientas de Contenedorización**: Docker, Docker Compose
+- **Herramientas de Contenedores**: Docker, Docker Compose
 
 ## ¿Qué es Edge Computing?
 
